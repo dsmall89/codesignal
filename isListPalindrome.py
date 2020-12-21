@@ -1,9 +1,9 @@
-# Singly-linked lists are already defined with this interface:
-# class ListNode(object):
-#   def __init__(self, x):
-#     self.value = x
-#     self.next = None
-#
+#Singly-linked lists are already defined with this interface:
+class ListNode(object):
+  def __init__(self, x):
+    self.value = x
+    self.next = None
+
 
 '''
 Algorithm:  O(n) time, 0(n) space
@@ -12,7 +12,7 @@ Algorithm:  O(n) time, 0(n) space
 3. Compare the reversed array to original array for equality
 Note: Cost about n space and we have to reverse one array
 '''
-def isListPalindrome(head) :
+def isListPalindrome(head):
     if not head:
             return True
         
@@ -22,3 +22,7 @@ def isListPalindrome(head) :
         head = head.next
     
     return arr == arr[::-1]
+    
+head_True = [0, 1, 0]
+head_False = [1, 2, 2, 3]
+isListPalindrome(head_True )

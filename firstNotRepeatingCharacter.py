@@ -8,7 +8,7 @@ find and return the first instance of a non-repeating character in it.
 O(n) solution
 1. We loop through the string once. 
 
-2. When we come across a new character, we store it in dcontainerwith a value of 1, and append it to acontainer . 
+2. When we come across a new character, we store it in dcontainer with a value of 1, and append it to acontainer . 
 
 3. When we come across a character we've seen before, we increment its value in dcontainer. 
 
