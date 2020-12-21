@@ -1,26 +1,18 @@
-def firstNotRepeatingCharactervoid(s):
-    dup = set()
-    for idx in range(len(s)):
-        
-        if s[idx] in dup:
-            return s[idx]
-            
-        elif s[idx] not in dup:
-            return "_"
-        else:
-          dup.add(s[idx])
-
-    return -1
-
+'''
+Given a string s consisting of small English letters, 
+find and return the first instance of a non-repeating character in it.
+ If there is no such character, return '_'.
+'''
 
 '''
 O(n) solution
-We loop through the string once. 
-When we come across a new character, we store it in counts with a value of 1, and append it to acontainer . 
+1. We loop through the string once. 
 
-When we come across a character we've seen before, we increment its value in counts. 
+2. When we come across a new character, we store it in dcontainerwith a value of 1, and append it to acontainer . 
 
-Finally, we loop through aContainer until we find a character with a value of 1 in counts 
+3. When we come across a character we've seen before, we increment its value in dcontainer. 
+
+4. Finally, we loop through aContainer until we find a character with a value of 1 in dcontainer 
 and return it.
 '''
 
