@@ -1,1 +1,1 @@
-isListPalindrome(head_True )
+print(d)

@@ -20,7 +20,7 @@ class ListNode(object):
         
         if l1:
             current.next = l1
-        elif l2:
+        else:
             current.next = l2
         
         return head.next
