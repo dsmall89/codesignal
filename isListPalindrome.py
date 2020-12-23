@@ -25,4 +25,19 @@ def isListPalindrome(head):
     
 head_True = [0, 1, 0]
 head_False = [1, 2, 2, 3]
-isListPalindrome(head_True )
+# isListPalindrome(head_True )
+
+
+def dicReturntest(sample, n):
+    
+    if sample == None:
+        return 0
+
+    
+    for idx,value in sample.items():
+      
+        if idx == n or value ==n:
+            return sample[idx]
+   
+test = {'E': '5', 'D': '7', 'M': '1'}
+print("Returned value: " + str(dicReturntest(test,"5")))

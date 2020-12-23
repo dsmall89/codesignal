@@ -1,0 +1,1 @@
+isListPalindrome(head_True )
