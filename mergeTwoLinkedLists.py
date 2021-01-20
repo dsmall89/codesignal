@@ -17,7 +17,7 @@ class ListNode(object):
                 l2 = l2.next
 
             current = current.next
-        
+        #Check for remaining values
         if l1:
             current.next = l1
         else:
